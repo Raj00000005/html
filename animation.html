@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            overflow: hidden;
+            animation: bg-color 5s infinite;
+        }
+        .cloud{
+            width: 100%;
+            height: 100%;
+        }
+        .bird{
+            position: relative;
+            width: 20%;
+            left: 100%;
+            animation: fly 5s infinite;
+        }
+        @keyframes bg-color{
+            0%{background-color: #00ffb1;}
+            25%{background-color: #e010a9;}
+            50%{background-color: #192bce;}
+            75%{background-color: #12c31e;}
+            100%{background-color: #d4cb19;}
+        }
+        @keyframes fly{
+            0%{
+                left:-20px;
+                top:5px;
+            }
+            25%{
+                top:150px;
+            }
+            50%{
+                top:30px;
+            }
+            75%{
+                top:25px;
+            }
+            100%{
+                right: -100px;
+                top: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="img1.gif" alt="" class="bird">
+        <img src="img1.gif" alt="" class="bird">
+        <img src="img1.gif" alt="" class="bird">
+        <img src="img1.gif" alt="" class="bird">
+        <img src="img1.gif" alt="" class="bird">
+        <img src="img1.gif" alt="" class="bird">
+        <img src="img1.gif" alt="" class="bird">
+        <img src="img1.gif" alt="" class="bird">
+        
+        <!--img src="" alt="" class="cloud"-->
+
+    </div>
+</body>
+</html>
